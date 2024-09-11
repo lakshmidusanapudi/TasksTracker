@@ -1,0 +1,6 @@
+{
+    "CreateTaskTable":"CREATE TABLE IF NOT EXISTS Tasks(Task_ID Varchar(15),Project_ID Varchar(40),Project_Name Varchar(255),Task_Name Varchar(50),EmployeeID Varchar(255), Task_Owner Varchar(40),AssignedTo Varchar(225),Task_Description Varchar(255),Start_Date Date,End_Date Date,Status Varchar(45),Complexity Varchar(50),Reason Varchar(255),efforts Varchar(255))",
+    "AddTask":"Insert into Tasks(Task_ID,Project_ID ,Project_Name ,Task_Name ,EmployeeID , Task_Owner ,AssignedTo, Task_Description ,Start_Date ,End_Date,Status,Complexity,Reason,efforts ) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+    "CreateProjectsTable":"CREATE TABLE IF NOT EXISTS Projects(Project_ID Varchar(40) PRIMARY KEY,Project_Name Varchar(255))",
+    "AddProject":"Insert into Projects(Project_ID,Project_Name) values (?,?)"
+}

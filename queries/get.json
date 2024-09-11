@@ -1,0 +1,16 @@
+{
+    "idquery":"SELECT Task_ID FROM Tasks WHERE EmployeeID = ? ORDER BY Task_ID DESC LIMIT 1",
+    "getTasks":"Select * from Tasks",
+    "getTaskById":"Select * from Tasks where Task_ID=?",
+    "getEmployeeById":"Select * from Tasks where EmployeeID=?",
+    "gettaskcount":"SELECT COUNT(*) AS total_tasks FROM Tasks;",
+    "getempcount":"SELECT COUNT(DISTINCT EmployeeID) AS number_of_employees FROM Tasks;",
+    "getcompletedcount":"SELECT COUNT(*) AS completed_tasks FROM Tasks WHERE Status = 'completed';",
+    "getincompletedcount":"SELECT COUNT(*) AS incomplete_tasks FROM Tasks WHERE Status != 'completed';",
+    "getreason":"Select Reason from Tasks where EmployeeID=? and Task_ID=?",
+
+    "ProjectIdQuery":"SELECT Project_ID FROM Projects ORDER BY Project_ID DESC LIMIT 1",
+    "getProjects":"SELECT Project_Name FROM Projects",
+    "getProjectsByName":"SELECT Project_ID FROM Projects WHERE Project_Name=?"
+   
+}
