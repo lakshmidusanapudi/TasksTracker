@@ -12,7 +12,11 @@ router.post('/addProject', async (req, res) => {
     try {     
         await connection.query(createQueries.CreateProjectsTable);
         const [rows] = await connection.query(getQueries.ProjectIdQuery);
+
+        
         let newProjectId = "PID001";
+
+
         if (rows.length > 0) {
             const latestProjectId = rows[0].Project_ID;
             const currentIdNumber = parseInt(latestProjectId.slice(-3),6);

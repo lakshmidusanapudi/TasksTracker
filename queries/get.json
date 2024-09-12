@@ -10,7 +10,7 @@
     "getreason":"Select Reason from Tasks where EmployeeID=? and Task_ID=?",
 
     "ProjectIdQuery":"SELECT Project_ID FROM Projects ORDER BY Project_ID DESC LIMIT 1",
-    "getProjects":"SELECT Project_Name FROM Projects",
+    "getProjects":"SELECT Project_ID, Project_Name FROM Projects;",
     "getProjectsByName":"SELECT Project_ID FROM Projects WHERE Project_Name=?"
    
 }
